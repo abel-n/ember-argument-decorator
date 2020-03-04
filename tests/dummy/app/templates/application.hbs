@@ -1,3 +1,10 @@
-<h2 id="title">Welcome to Ember</h2>
+<Input @value={{this.newName}} />
 
-{{outlet}}
+<button
+  {{on "click" this.changeName}}
+  type="button"
+>
+  Change name
+</button>
+
+<Demo @name={{this.name}} />
