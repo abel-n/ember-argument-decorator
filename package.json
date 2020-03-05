@@ -20,7 +20,8 @@
     "test": "ember test",
     "test:test-apps": "cd test-apps/new-app && yarn test",
     "test:all": "ember try:each",
-    "prepare": "./scripts/link-them.sh"
+    "prepare": "./scripts/link-them.sh",
+    "release": "release-it"
   },
   "dependencies": {
     "ember-cli-babel": "^7.17.2",
@@ -54,8 +55,11 @@
     "ember-try": "^1.4.0",
     "eslint-plugin-ember": "^7.7.2",
     "eslint-plugin-node": "^11.0.0",
+    "lerna-changelog": "^1.0.1",
     "loader.js": "^4.7.0",
-    "qunit-dom": "^1.0.0"
+    "qunit-dom": "^1.0.0",
+    "release-it": "^12.6.3",
+    "release-it-lerna-changelog": "^1.0.3"
   },
   "engines": {
     "node": "10.* || >= 12"
