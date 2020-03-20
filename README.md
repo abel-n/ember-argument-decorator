@@ -1,9 +1,6 @@
 ember-argument-decorator
 ==============================================================================
 
-[Short description of the addon.]
-
-
 Compatibility
 ------------------------------------------------------------------------------
 
@@ -15,22 +12,21 @@ Compatibility
 Installation
 ------------------------------------------------------------------------------
 
-```
+```shell
 ember install ember-argument-decorator
 ```
-
 
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+```js
+import Component from '@glimmer/component';
+import argument from 'ember-argument-decorator';
 
-
-Contributing
-------------------------------------------------------------------------------
-
-See the [Contributing](CONTRIBUTING.md) guide for details.
-
+export default class XComponent extends Component {
+  @argument searchEnabled = true
+}
+```
 
 License
 ------------------------------------------------------------------------------
